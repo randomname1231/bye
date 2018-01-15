@@ -21,7 +21,7 @@
   var endDate = moment.tz("2018-01-26 18:00", "Europe/Kiev");
 
   $('#countdown').countdown(endDate.toDate(), function(event) {
-    $(this).html(event.strftime('%D дней %H часов %M минут %S секунд'));
+    $(this).html(event.strftime('%D дней %H часов %M минут %S секунд')); // склонять часы минуты дни и секунды я ебал
   });
 </script>
 </body>
