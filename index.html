@@ -1,0 +1,29 @@
+<!-- хули палишь ?  ∩╮（︶︿︶）╭∩╮-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>...</title>
+  <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+<div id="countdown"></div>
+
+<script src="./bower_components/moment/min/moment.min.js"></script>
+<script src="./bower_components/moment-timezone/builds/moment-timezone-with-data-2012-2022.min.js"></script>
+
+<script src="./bower_components/jquery/dist/jquery.js"></script>
+<script src="./bower_components/jquery.countdown/dist/jquery.countdown.js"></script>
+
+<script>
+  var endDate = moment.tz("2018-01-26 18:00", "Europe/Kiev");
+
+  $('#countdown').countdown(endDate.toDate(), function(event) {
+    $(this).html(event.strftime('%D days %H:%M:%S'));
+  });
+</script>
+</body>
+</html>
+<!-- конец. блять  ( ͡° ͜ʖ ͡°)  -->
