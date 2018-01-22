@@ -18,8 +18,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  font-size: 50px;
+  color: #ff3131;
+  font-size: 75px;
   text-shadow: 0 0 8px rgba(150, 150, 150, 1);
   text-align: center;
 }
